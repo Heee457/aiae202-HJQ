@@ -1,0 +1,40 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+*.code-workspace
+.history/
+*.DS_Store
+~$*
+*~
+
+# Course runtime artifacts
+.chainlit/
+chroma-data/
+05-agentic-rag/code_samples/chroma_db/
+13-agent-memory/.cognee_system/
+13-agent-memory/.data_storage/
+02-explore-agentic-frameworks/code_samples/*.png
+.coop/
+06-building-trustworthy-agents/code_samples/gate_log_*.jsonl
+12-context-engineering/code_samples/vacation_agent_scratchpad.md
+08-multi-agent/code_samples/workflows-langgraph/python/2*.md
+13-agent-memory/cognee_graph.html
+17-creating-local-ai-agents/code_samples/sample_project/

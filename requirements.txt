@@ -1,0 +1,53 @@
+# AI Agents for Beginners — Python dependencies
+# Install with:  pip install -r requirements.txt
+# Every lesson uses an OpenAI-compatible Chat Completions endpoint; see .env.example.
+
+# Agent framework (LangChain 1.x + LangGraph 1.x)
+langchain>=1.4,<2
+langgraph>=1.2,<2
+langchain-openai>=1.6,<2
+langchain-mcp-adapters>=0.3,<1
+
+# Model access (plain SDK, used directly in lesson 06 and by scripts/check_endpoint.py)
+openai>=3.0,<4
+
+# Protocols
+mcp[cli]>=1.30,<2
+a2a-sdk>=1.1,<2
+
+# Retrieval and search
+chromadb>=1.5,<2
+ddgs>=9.0,<10
+
+# Serving (lessons 01, 04, 05 and 16)
+fastapi>=0.141,<1
+uvicorn
+
+# Observability (lessons 10 and 16)
+opentelemetry-sdk>=1.44,<2
+
+# Notebook execution and validation
+ipykernel
+nbclient
+nbconvert
+nbformat
+nest-asyncio
+notebook
+pytest
+
+# Data and utilities
+httpx
+numpy
+pandas
+pillow
+pydantic>=2
+python-dotenv
+requests
+
+# Lesson 18 — signed receipts
+jcs
+pynacl
+
+# Per-lesson extras are installed inside the notebook that needs them:
+#   lesson 13: cognee, fastembed      lesson 15: browser-use, playwright
+#   lesson 11 (github-mcp app): chainlit
